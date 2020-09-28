@@ -10,7 +10,7 @@ npm i lodash-uni
 
 ## Usage
 
-```bash
+```javascript
 import { uniq } from 'lodash-uni'
 ```
 

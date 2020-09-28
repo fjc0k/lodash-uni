@@ -1,6 +1,6 @@
 {
   "name": "lodash-uni",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Export lodash for CommonJS, lodash-es for ESModule.",
   "keywords": [
     "lodash",
@@ -10,6 +10,12 @@
   "main": "lodash.js",
   "module": "lodash-es.js",
   "types": "lodash-es.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lodash.js",
+      "import": "./lodash-es.js"
+    }
+  },
   "author": {
     "name": "Jay Fong",
     "email": "fjc0kb@gmail.com",
