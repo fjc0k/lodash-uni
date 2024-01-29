@@ -7,14 +7,17 @@
     "lodash-es",
     "lodash-uni"
   ],
-  "main": "lodash.js",
-  "module": "lodash-es.js",
-  "types": "lodash-es.d.ts",
+  "main": "lodash.cjs",
+  "type": "module",
+  "module": "lodash.mjs",
+  "types": "lodash.d.ts",
   "exports": {
     ".": {
-      "require": "./lodash.js",
-      "import": "./lodash-es.js"
-    }
+      "require": "./lodash.cjs",
+      "import": "./lodash.mjs",
+      "types": "./lodash.d.ts"
+    },
+    "./package.json": "./package.json"
   },
   "author": {
     "name": "Jay Fong",
@@ -32,9 +35,9 @@
   },
   "homepage": "https://github.com/fjc0k/lodash-uni#readme",
   "dependencies": {
-    "@types/lodash-es": "^4.17.3",
-    "lodash": "^4.17.20",
-    "lodash-es": "^4.17.15"
+    "@types/lodash-es": "^4.17.12",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
   },
   "publishConfig": {
     "access": "public",
